@@ -16,7 +16,7 @@ Revolutionary DLL Injector made with Electron, Vue, TypeScript and C++.
 
 ## Overview
 
-HEX-EN is the first public DLL injector written with Node. I decided to combine the power of Vue and Electron with C++ and I created this tool. I tried to keep code clean and bug-free. It is dedicated mostly for CS:GO players who use internal DLL cheats (*yes, it is undetected..*). Feel free to contribute and use this code in your open-source projects.
+HEX-EN is the first public DLL injector written with Node. I decided to combine power of Vue and Electron with C++ so I created this tool. I tried to keep code clean and bug-free. It is made mostly for CS:GO players who use internal DLL cheats (*yes, it is undetected..*). Feel free to contribute and use this code in your open-source projects.
 
 ##### It was made using:
 * [Node.js](https://nodejs.org/en/)
