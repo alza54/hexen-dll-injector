@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "esnext",
+    "experimentalDecorators": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ]
+  }
+}
