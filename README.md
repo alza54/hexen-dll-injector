@@ -84,6 +84,7 @@ This project is licensed under the MIT License (*but plss dont sell it*)
 
 ## Acknowledgments
 
+* *polish notes*
 * dzieki pawel za pozyczenie dychy
 * wszystkim ziomom co tego uzywaja pozdro
 * [za to](https://youtu.be/a48A_3xEst8)
