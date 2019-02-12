@@ -81,18 +81,3 @@ See also the list of [contributors](https://github.com/alza54/hexen-dll-injector
 ## License
 
 This project is licensed under the MIT License (*but plss dont sell it*)
-
-## Acknowledgments
-
-*polish notes*
-* dzieki pawel za pozyczenie dychy
-* wszystkim ziomom co tego uzywaja pozdro
-* [za to](https://youtu.be/a48A_3xEst8)
-* nie waldkowi nie dam bo mnie zbanowal
-* ale dzieki za zakceptowanie na csh
-* tylko szkoda ze sie pobrac nie da
-
-## Donate
-
-**&copy; shellcode.team 2019**
-nie sprzedam sie pozdro a 5zik donate i tak nie wyslesz bo ci szkoda pewnie
