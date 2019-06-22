@@ -3,7 +3,7 @@
 <img width="500" src="static/logo.png" alt="hex-en logo">
 </div>
 <h5 align="center" color="#f62f6d">
-Revolutionary DLL Injector made with Electron, Vue, TypeScript and C++.
+DLL Injector made with Electron, Vue, TypeScript and C++.
 <br>It is functional, handy, fast, pretty, modern and easy-to-use.
 </h5>
 <div align=center>
@@ -76,7 +76,7 @@ Just contribute!
 * **expl0it / alza54** - *expl0it@shellcode.team* [GitHub](https://github.com/alza54)
 
 See also the list of [contributors](https://github.com/alza54/hexen-dll-injector/contributors) who participated in this project.
-###### (probably only me xD)
+###### (only me)
 
 ## License
 
