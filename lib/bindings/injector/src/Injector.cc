@@ -7,7 +7,6 @@ Injector::Injector () {}
 Injector::~Injector () {}
 
 void Injector::Init (v8::Local<v8::Object> exports) {
-
   Nan::HandleScope scope;
 
   // Prepare constructor template
@@ -16,7 +15,6 @@ void Injector::Init (v8::Local<v8::Object> exports) {
   tpl->InstanceTemplate()->SetInternalFieldCount(1);
 
   // Prototype
-
   Nan::SetPrototypeMethod(tpl, "on", On);
   Nan::SetPrototypeMethod(tpl, "inject", Inject);
 
@@ -26,7 +24,6 @@ void Injector::Init (v8::Local<v8::Object> exports) {
 }
 
 void Injector::New (const Nan::FunctionCallbackInfo<v8::Value>& info) {
-
   Injector* injector = new Injector();
 
   injector->Wrap(info.This());
@@ -37,16 +34,14 @@ void Injector::New (const Nan::FunctionCallbackInfo<v8::Value>& info) {
 }
 
 void Injector::On (const Nan::FunctionCallbackInfo<v8::Value>& info) {
+  Injector* injector = ObjectWrap::Unwrap<Injector>(info.Holder());
 
-	Injector* injector = ObjectWrap::Unwrap<Injector>(info.Holder());
+  v8::String::Utf8Value arg0(info[0]->ToString());
+  std::string callbackName = std::string(*arg0);
 
-	v8::String::Utf8Value arg0(info[0]->ToString());
-	std::string callbackName = std::string(*arg0);
-
-	if (callbackName == "log") {
-		injector->log = new Nan::Callback(info[1].As<v8::Function>());
-	}
-
+  if (callbackName == "log") {
+    injector->log = new Nan::Callback(info[1].As<v8::Function>());
+  }
 }
 
 void Injector::Log (Nan::Callback* cb, const char* type, const char* message) {
@@ -59,8 +54,7 @@ void Injector::Log (Nan::Callback* cb, const char* type, const char* message) {
 }
 
 void Injector::Inject (const Nan::FunctionCallbackInfo<v8::Value>& info) {
-
-	Injector* injector = ObjectWrap::Unwrap<Injector>(info.Holder());
+  Injector* injector = ObjectWrap::Unwrap<Injector>(info.Holder());
 
   if (info.Length() < 2) {
     return Nan::ThrowTypeError("Wrong number of arguments");
@@ -93,7 +87,6 @@ void Injector::Inject (const Nan::FunctionCallbackInfo<v8::Value>& info) {
   bool injectionSuccess = false;
 
   do {
-
     if (!handle) {
       Log(injector->log, "error", "Failed to open the target process.");
       break;
@@ -168,7 +161,6 @@ void Injector::Inject (const Nan::FunctionCallbackInfo<v8::Value>& info) {
   }
 
   info.GetReturnValue().Set(Nan::New<v8::Boolean>(injectionSuccess));
-
 }
 
 BOOL Injector::FileExists(CHAR* Path) {
