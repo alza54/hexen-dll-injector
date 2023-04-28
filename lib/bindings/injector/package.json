@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "expl0it <expl0it@shellcode.team>",
   "description": "HEX-EN DLL Injector C++ module",
-  "license": null,
+  "license": *,
   "main": "index.js",
   "scripts": {
     "build": "node-gyp rebuild --runtime=electron --target=4.0.4 --arch=ia32 --disturl=https://atom.io/download/atom-shell --build-from-source"
